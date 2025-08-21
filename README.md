@@ -6,4 +6,4 @@ in this project ,I designed a 5T-OTA with a specific specs the design follow the
 ## First step(input pair design):
 
 from spec we have gain bandwith product to be equal to 5Mhz 
-
+ from there we can get GBW = gm/(2*pi*Cout)   ==> haing Cout dominated by Cl which is 5p so we can get gm which is  approximaly 160u siemens 
