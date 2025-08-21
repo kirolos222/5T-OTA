@@ -11,5 +11,8 @@ from spec we have gain bandwith product to be equal to 5Mhz
 
 
 ##Layout:
-in this layout 
+in this layout the nmos was put in pwell which is connected to ground and pmos in a nwell connected to VDD to prevent latch up i.e. pnpn path the whole stack was put in a Dnwell for isolation
+
 <img width="730" height="610" alt="image" src="https://github.com/user-attachments/assets/a41ed426-e484-4174-b114-243bf50a0dd7" />
+
+##Post layout simulation:
