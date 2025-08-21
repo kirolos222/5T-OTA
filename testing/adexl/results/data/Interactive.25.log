@@ -1,0 +1,17 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Aug 11 04:53:43 2025 
+Best design point: 1
+Design specs: 
+	OTA_5:testing:1	corner	Nominal - 
+	(getData("M0:gm" ?result "dcOp") / getData("M0:gds" ?result "dcOp"))		35.8
+	(getData("M0:gm" ?result "dcOp") / getData("M0:id" ?result "dcOp"))		6.164
+Design parameters: 
+	Lin		1u
+	Win		1u
+
+Interactive.25
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.25 completed. 
+Current time: Mon Aug 11 04:53:46 2025 

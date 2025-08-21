@@ -1,0 +1,1322 @@
+<?xml version="1.0"?>
+<setupdb version="5">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test>OTA_5:testing_CM:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>testing_CM</value>
+					</option>
+					<option>lib
+						<value>OTA_5</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>OTA_5:testing_CM:1_active</value>
+					</option>
+				</tooloptions>
+				<outputs>
+					<output>waveVsWave(?x (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / getData("M0:gds" ?result "dc")))
+						<evalType>point</evalType>
+					</output>
+					<output>waveVsWave(?x (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))) ?y (getData("M0:gm" ?result "dc") / getData("M0:gds" ?result "dc")))
+						<evalType>point</evalType>
+					</output>
+					<output>waveVsWave(?x v("M0:vgs" ?result "dc") ?y (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")))
+						<evalType>point</evalType>
+					</output>
+					<output>waveVsWave(?x v("M0:vgs" ?result "dc") ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+						<evalType>point</evalType>
+					</output>
+					<output>waveVsWave(?x (- v("M0:vgs" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+						<evalType>point</evalType>
+					</output>
+					<output>waveVsWave(?x (v("M0:vgs" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+				<origoptions>
+					<option>cell
+						<value>testing_CM</value>
+					</option>
+					<option>lib
+						<value>OTA_5</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+		</tests>
+		<vars>
+			<var enabled="1">LP
+				<value>2u</value>
+				<dependentTests>
+					<dependentTest enabled="1" omitted="0">OTA_5:testing_CM:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">VGS
+				<value>0</value>
+				<dependentTests>
+					<dependentTest enabled="0" omitted="0">OTA_5:testing_CM:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">WP
+				<value></value>
+				<dependentTests>
+					<dependentTest enabled="0" omitted="0">OTA_5:testing_CM:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value>                            </value>
+			</plottingoption>
+		</plottingoptions>
+	</active>
+	<history>History
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.7
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>OTA_5:testing_CM:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>testing_CM</value>
+							</option>
+							<option>lib
+								<value>OTA_5</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_5:testing_CM:1_none_Interactive.7</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>testing_CM</value>
+							</option>
+							<option>lib
+								<value>OTA_5</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>waveVsWave(?x (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / getData("M0:gds" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))) ?y (getData("M0:gm" ?result "dc") / getData("M0:gds" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x v("M0:vgs" ?result "dc") ?y (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x v("M0:vgs" ?result "dc") ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (- v("M0:vgs" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">LP
+						<value>1.2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VGS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">WP
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Aug 11 07:18:41 2025
+</timestamp>
+			<resultsname>/home/cadence/Desktop/PDK_CRN65LP_v1.7a_Official_IC61_20120914_all/PDK_CRN65LP_v1.7a_Official_IC61_20120914/OTA_5/testing_CM/adexl/results/data/Interactive.7.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.7.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_071841835</localpsfdir>
+			<psfdir>/home/cadence/simulation/OTA_5/testing_CM/adexl/results/data/Interactive.7</psfdir>
+			<simdir>$AXL_PROJECT_DIR/OTA_5/testing_CM/adexl/results/data/Interactive.7</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/Desktop/PDK_CRN65LP_v1.7a_Official_IC61_20120914_all/PDK_CRN65LP_v1.7a_Official_IC61_20120914/OTA_5/testing_CM/adexl/results/data/Interactive.7.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.7.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.8
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>OTA_5:testing_CM:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>testing_CM</value>
+							</option>
+							<option>lib
+								<value>OTA_5</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_5:testing_CM:1_none_Interactive.8</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>waveVsWave(?x (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / getData("M0:gds" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))) ?y (getData("M0:gm" ?result "dc") / getData("M0:gds" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x v("M0:vgs" ?result "dc") ?y (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x v("M0:vgs" ?result "dc") ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (- v("M0:vgs" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>testing_CM</value>
+							</option>
+							<option>lib
+								<value>OTA_5</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">LP
+						<value>1.2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VGS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">WP
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Aug 11 10:15:01 2025
+</timestamp>
+			<resultsname>/home/cadence/Desktop/PDK_CRN65LP_v1.7a_Official_IC61_20120914_all/PDK_CRN65LP_v1.7a_Official_IC61_20120914/OTA_5/testing_CM/adexl/results/data/Interactive.8.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.8.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_101501737</localpsfdir>
+			<psfdir>/home/cadence/simulation/OTA_5/testing_CM/adexl/results/data/Interactive.8</psfdir>
+			<simdir>$AXL_PROJECT_DIR/OTA_5/testing_CM/adexl/results/data/Interactive.8</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/Desktop/PDK_CRN65LP_v1.7a_Official_IC61_20120914_all/PDK_CRN65LP_v1.7a_Official_IC61_20120914/OTA_5/testing_CM/adexl/results/data/Interactive.8.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.8.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.9
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>OTA_5:testing_CM:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>testing_CM</value>
+							</option>
+							<option>lib
+								<value>OTA_5</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_5:testing_CM:1_none_Interactive.9</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>waveVsWave(?x (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / getData("M0:gds" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))) ?y (getData("M0:gm" ?result "dc") / getData("M0:gds" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x v("M0:vgs" ?result "dc") ?y (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x v("M0:vgs" ?result "dc") ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (- v("M0:vgs" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>testing_CM</value>
+							</option>
+							<option>lib
+								<value>OTA_5</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">LP
+						<value>1.2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VGS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">WP
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Aug 11 10:17:28 2025
+</timestamp>
+			<resultsname>/home/cadence/Desktop/PDK_CRN65LP_v1.7a_Official_IC61_20120914_all/PDK_CRN65LP_v1.7a_Official_IC61_20120914/OTA_5/testing_CM/adexl/results/data/Interactive.9.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.9.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_101728909</localpsfdir>
+			<psfdir>/home/cadence/simulation/OTA_5/testing_CM/adexl/results/data/Interactive.9</psfdir>
+			<simdir>$AXL_PROJECT_DIR/OTA_5/testing_CM/adexl/results/data/Interactive.9</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/Desktop/PDK_CRN65LP_v1.7a_Official_IC61_20120914_all/PDK_CRN65LP_v1.7a_Official_IC61_20120914/OTA_5/testing_CM/adexl/results/data/Interactive.9.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.9.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.10
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>OTA_5:testing_CM:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>testing_CM</value>
+							</option>
+							<option>lib
+								<value>OTA_5</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_5:testing_CM:1_none_Interactive.10</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>waveVsWave(?x (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / getData("M0:gds" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))) ?y (getData("M0:gm" ?result "dc") / getData("M0:gds" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x v("M0:vgs" ?result "dc") ?y (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x v("M0:vgs" ?result "dc") ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (- v("M0:vgs" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>testing_CM</value>
+							</option>
+							<option>lib
+								<value>OTA_5</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">LP
+						<value>1.2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VGS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">WP
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Aug 11 10:22:27 2025
+</timestamp>
+			<resultsname>/home/cadence/Desktop/PDK_CRN65LP_v1.7a_Official_IC61_20120914_all/PDK_CRN65LP_v1.7a_Official_IC61_20120914/OTA_5/testing_CM/adexl/results/data/Interactive.10.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.10.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_102227228</localpsfdir>
+			<psfdir>/home/cadence/simulation/OTA_5/testing_CM/adexl/results/data/Interactive.10</psfdir>
+			<simdir>$AXL_PROJECT_DIR/OTA_5/testing_CM/adexl/results/data/Interactive.10</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/Desktop/PDK_CRN65LP_v1.7a_Official_IC61_20120914_all/PDK_CRN65LP_v1.7a_Official_IC61_20120914/OTA_5/testing_CM/adexl/results/data/Interactive.10.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.10.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.11
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>OTA_5:testing_CM:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>testing_CM</value>
+							</option>
+							<option>lib
+								<value>OTA_5</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_5:testing_CM:1_none_Interactive.11</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>waveVsWave(?x (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / getData("M0:gds" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))) ?y (getData("M0:gm" ?result "dc") / getData("M0:gds" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x v("M0:vgs" ?result "dc") ?y (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x v("M0:vgs" ?result "dc") ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (- v("M0:vgs" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>testing_CM</value>
+							</option>
+							<option>lib
+								<value>OTA_5</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">LP
+						<value>1.2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VGS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">WP
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Aug 11 10:23:23 2025
+</timestamp>
+			<resultsname>/home/cadence/Desktop/PDK_CRN65LP_v1.7a_Official_IC61_20120914_all/PDK_CRN65LP_v1.7a_Official_IC61_20120914/OTA_5/testing_CM/adexl/results/data/Interactive.11.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.11.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_102323677</localpsfdir>
+			<psfdir>/home/cadence/simulation/OTA_5/testing_CM/adexl/results/data/Interactive.11</psfdir>
+			<simdir>$AXL_PROJECT_DIR/OTA_5/testing_CM/adexl/results/data/Interactive.11</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/Desktop/PDK_CRN65LP_v1.7a_Official_IC61_20120914_all/PDK_CRN65LP_v1.7a_Official_IC61_20120914/OTA_5/testing_CM/adexl/results/data/Interactive.11.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.11.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.12
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>OTA_5:testing_CM:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>testing_CM</value>
+							</option>
+							<option>lib
+								<value>OTA_5</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_5:testing_CM:1_none_Interactive.12</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>waveVsWave(?x (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / getData("M0:gds" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))) ?y (getData("M0:gm" ?result "dc") / getData("M0:gds" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x v("M0:vgs" ?result "dc") ?y (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x v("M0:vgs" ?result "dc") ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (- v("M0:vgs" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>testing_CM</value>
+							</option>
+							<option>lib
+								<value>OTA_5</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">LP
+						<value>1.2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VGS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">WP
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Aug 11 10:24:58 2025
+</timestamp>
+			<resultsname>/home/cadence/Desktop/PDK_CRN65LP_v1.7a_Official_IC61_20120914_all/PDK_CRN65LP_v1.7a_Official_IC61_20120914/OTA_5/testing_CM/adexl/results/data/Interactive.12.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.12.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_102458641</localpsfdir>
+			<psfdir>/home/cadence/simulation/OTA_5/testing_CM/adexl/results/data/Interactive.12</psfdir>
+			<simdir>$AXL_PROJECT_DIR/OTA_5/testing_CM/adexl/results/data/Interactive.12</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/Desktop/PDK_CRN65LP_v1.7a_Official_IC61_20120914_all/PDK_CRN65LP_v1.7a_Official_IC61_20120914/OTA_5/testing_CM/adexl/results/data/Interactive.12.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.12.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.13
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>OTA_5:testing_CM:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>testing_CM</value>
+							</option>
+							<option>lib
+								<value>OTA_5</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_5:testing_CM:1_none_Interactive.13</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>testing_CM</value>
+							</option>
+							<option>lib
+								<value>OTA_5</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>waveVsWave(?x (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / getData("M0:gds" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))) ?y (getData("M0:gm" ?result "dc") / getData("M0:gds" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x v("M0:vgs" ?result "dc") ?y (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x v("M0:vgs" ?result "dc") ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (- v("M0:vgs" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (v("M0:vgs" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">LP
+						<value>1.2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VGS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">WP
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Aug 11 10:26:42 2025
+</timestamp>
+			<resultsname>/home/cadence/Desktop/PDK_CRN65LP_v1.7a_Official_IC61_20120914_all/PDK_CRN65LP_v1.7a_Official_IC61_20120914/OTA_5/testing_CM/adexl/results/data/Interactive.13.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.13.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_102642850</localpsfdir>
+			<psfdir>/home/cadence/simulation/OTA_5/testing_CM/adexl/results/data/Interactive.13</psfdir>
+			<simdir>$AXL_PROJECT_DIR/OTA_5/testing_CM/adexl/results/data/Interactive.13</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/Desktop/PDK_CRN65LP_v1.7a_Official_IC61_20120914_all/PDK_CRN65LP_v1.7a_Official_IC61_20120914/OTA_5/testing_CM/adexl/results/data/Interactive.13.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.13.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.14
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>OTA_5:testing_CM:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>testing_CM</value>
+							</option>
+							<option>lib
+								<value>OTA_5</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_5:testing_CM:1_none_Interactive.14</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>waveVsWave(?x (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / getData("M0:gds" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))) ?y (getData("M0:gm" ?result "dc") / getData("M0:gds" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x v("M0:vgs" ?result "dc") ?y (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x v("M0:vgs" ?result "dc") ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (- v("M0:vgs" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (v("M0:vgs" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>testing_CM</value>
+							</option>
+							<option>lib
+								<value>OTA_5</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">LP
+						<value>1.2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VGS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">WP
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Aug 11 10:28:11 2025
+</timestamp>
+			<resultsname>/home/cadence/Desktop/PDK_CRN65LP_v1.7a_Official_IC61_20120914_all/PDK_CRN65LP_v1.7a_Official_IC61_20120914/OTA_5/testing_CM/adexl/results/data/Interactive.14.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.14.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_102811997</localpsfdir>
+			<psfdir>/home/cadence/simulation/OTA_5/testing_CM/adexl/results/data/Interactive.14</psfdir>
+			<simdir>$AXL_PROJECT_DIR/OTA_5/testing_CM/adexl/results/data/Interactive.14</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/Desktop/PDK_CRN65LP_v1.7a_Official_IC61_20120914_all/PDK_CRN65LP_v1.7a_Official_IC61_20120914/OTA_5/testing_CM/adexl/results/data/Interactive.14.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.14.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.15
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>OTA_5:testing_CM:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>testing_CM</value>
+							</option>
+							<option>lib
+								<value>OTA_5</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_5:testing_CM:1_none_Interactive.15</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>waveVsWave(?x (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / getData("M0:gds" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))) ?y (getData("M0:gm" ?result "dc") / getData("M0:gds" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x v("M0:vgs" ?result "dc") ?y (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x v("M0:vgs" ?result "dc") ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (- v("M0:vgs" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (v("M0:vgs" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>testing_CM</value>
+							</option>
+							<option>lib
+								<value>OTA_5</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">LP
+						<value>1.2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VGS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">WP
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Aug 11 10:28:55 2025
+</timestamp>
+			<resultsname>/home/cadence/Desktop/PDK_CRN65LP_v1.7a_Official_IC61_20120914_all/PDK_CRN65LP_v1.7a_Official_IC61_20120914/OTA_5/testing_CM/adexl/results/data/Interactive.15.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.15.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_102855249</localpsfdir>
+			<psfdir>/home/cadence/simulation/OTA_5/testing_CM/adexl/results/data/Interactive.15</psfdir>
+			<simdir>$AXL_PROJECT_DIR/OTA_5/testing_CM/adexl/results/data/Interactive.15</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/Desktop/PDK_CRN65LP_v1.7a_Official_IC61_20120914_all/PDK_CRN65LP_v1.7a_Official_IC61_20120914/OTA_5/testing_CM/adexl/results/data/Interactive.15.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.15.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.16
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>OTA_5:testing_CM:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>testing_CM</value>
+							</option>
+							<option>lib
+								<value>OTA_5</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>OTA_5:testing_CM:1_none_Interactive.16</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>waveVsWave(?x (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / getData("M0:gds" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))) ?y (getData("M0:gm" ?result "dc") / getData("M0:gds" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x v("M0:vgs" ?result "dc") ?y (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x v("M0:vgs" ?result "dc") ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (- v("M0:vgs" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+							<output>waveVsWave(?x (v("M0:vgs" ?result "dc")) ?y (getData("M0:gm" ?result "dc") / (- getData("M0:id" ?result "dc"))))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>testing_CM</value>
+							</option>
+							<option>lib
+								<value>OTA_5</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">LP
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VGS
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">WP
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">OTA_5:testing_CM:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Aug 11 10:29:35 2025
+</timestamp>
+			<resultsname>/home/cadence/Desktop/PDK_CRN65LP_v1.7a_Official_IC61_20120914_all/PDK_CRN65LP_v1.7a_Official_IC61_20120914/OTA_5/testing_CM/adexl/results/data/Interactive.16.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.16.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_102935239</localpsfdir>
+			<psfdir>/home/cadence/simulation/OTA_5/testing_CM/adexl/results/data/Interactive.16</psfdir>
+			<simdir>$AXL_PROJECT_DIR/OTA_5/testing_CM/adexl/results/data/Interactive.16</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/Desktop/PDK_CRN65LP_v1.7a_Official_IC61_20120914_all/PDK_CRN65LP_v1.7a_Official_IC61_20120914/OTA_5/testing_CM/adexl/results/data/Interactive.16.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.16.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

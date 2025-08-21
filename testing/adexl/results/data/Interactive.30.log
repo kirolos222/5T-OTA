@@ -1,0 +1,15 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Aug 11 06:55:55 2025 
+Best design point: 1
+Design specs: 
+	OTA_5:testing:1	corner	Nominal - 
+Design parameters: 
+	Lin		3.1u
+	Win		1u
+
+Interactive.30
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.30 completed. 
+Current time: Mon Aug 11 06:55:59 2025 

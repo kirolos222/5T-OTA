@@ -1,0 +1,16 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Aug 11 06:25:40 2025 
+Best design point: 1
+Design specs: 
+	OTA_5:testing:1	corner	Nominal - 
+	waveVsWave(?x (getData("M0:gm" ?result "dc") / getData("M0:id" ?result "dc")) ?y (getData("M0:id" ?result "dc") / Win))		Error	No
+Design parameters: 
+	Lin		2.1u
+	Win		1u
+
+Interactive.28
+Number of points completed: 1
+Number of simulation errors: 1
+Interactive.28 completed. 
+Current time: Mon Aug 11 06:25:44 2025 

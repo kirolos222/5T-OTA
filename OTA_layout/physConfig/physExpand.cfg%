@@ -1,0 +1,16 @@
+//Revision 5
+//NOTE
+//VXL Configuration
+//END_NOTE
+
+config OTA_layout;
+design OTA_5.OTA_layout:schematic;
+liblist OTA_5;
+
+viewlist physConfig, schematic, symbol;
+
+constraintviewlist constraint;
+stoplist layout, abstract;
+
+
+endconfig

@@ -1,0 +1,15 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Aug 21 10:32:47 2025 
+Best design point: 1
+Design specs: 
+	OTA_5:OTA_layout_TEST:1	corner	Nominal - 
+	gainBwProd(VF("/net1"))		6.491M
+	bandwidth(VF("/net1") 3 "low")		95.38k
+Design parameters: 
+
+Interactive.2
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.2 completed. 
+Current time: Thu Aug 21 10:32:51 2025 
