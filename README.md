@@ -47,3 +47,13 @@ Bode plot and loop gain :
 
 <img width="1915" height="738" alt="image" src="https://github.com/user-attachments/assets/01848dfb-fa47-4541-b623-252723146eac" />
 
+## PVT GAIN before and after layout:
+
+before:
+
+<img width="1913" height="771" alt="image" src="https://github.com/user-attachments/assets/50bebe0b-7651-4224-b6be-4a4cb76042f6" />
+
+after :
+
+<img width="1916" height="760" alt="image" src="https://github.com/user-attachments/assets/4fc9480a-7f48-4dbb-9133-ca77e49ff7f9" />
+
