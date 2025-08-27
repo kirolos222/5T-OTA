@@ -20,3 +20,30 @@ Gain:
 Bw and GNW : 
 
 <img width="631" height="59" alt="image" src="https://github.com/user-attachments/assets/2e841855-5190-4eef-8483-dd4f2f21f33b" />
+
+## negative feedback :
+Gain : 
+
+<img width="994" height="663" alt="image" src="https://github.com/user-attachments/assets/9ef184ee-f110-478a-be5b-61f8146abdab" />
+
+GBW and BW :
+
+<img width="664" height="84" alt="image" src="https://github.com/user-attachments/assets/8c959d60-6ac6-416d-bf09-b0082709a421" />
+
+Bode plot and loop gain :
+
+<img width="1919" height="720" alt="image" src="https://github.com/user-attachments/assets/5b888468-023a-40e0-8cfc-3f558fa2e650" />
+
+### post layout simualtion of negative feedback:
+Gain:
+
+<img width="989" height="664" alt="image" src="https://github.com/user-attachments/assets/ec568fbc-db84-4b43-9c7c-cf972648deba" />
+
+GBW and BW:
+
+<img width="640" height="44" alt="image" src="https://github.com/user-attachments/assets/3ce79098-c4e1-4e5c-84ae-b927adfe8c4d" />
+
+Bode plot and loop gain :
+
+<img width="1915" height="738" alt="image" src="https://github.com/user-attachments/assets/01848dfb-fa47-4541-b623-252723146eac" />
+
